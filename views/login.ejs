@@ -1,0 +1,20 @@
+<!-- filepath: /pet-adoption-app/pet-adoption-app/views/login.ejs -->
+<%- include('partials/header') %>
+<main class="content-area">
+    <section class="form-container">
+        <h2>Login to Your Account</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Login</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+        </form>
+    </section>
+</main>
+<%- include('partials/footer') %>

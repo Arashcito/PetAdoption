@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<main class="content-area">
+    <section class="form-container">
+        <h2>Create an Account</h2>
+        <form action="/create-account" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Create Account</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+        </form>
+    </section>
+</main>
+<%- include('partials/footer') %>

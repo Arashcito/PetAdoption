@@ -1,0 +1,36 @@
+<%- include('partials/header’) %>
+        <main class="content-area">
+            <section class="form-container">
+                <h2>Give Away a Pet</h2>
+                <form action="#" method="post">
+                    <label for="animal-type">Cat or Dog:</label>
+                    <select id="animal-type" name="animal-type">
+                        <option>Cat</option>
+                        <option>Dog</option>
+                    </select>
+                    
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed" required>
+                    
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option>0-1 years</option>
+                        <option>2-4 years</option>
+                        <option>5-7 years</option>
+                        <option>8+ years</option>
+                    </select>
+
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                    
+                    <div class="button-group">
+                        <button type="reset" class="clear-btn">Clear</button>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+<%- include('partials/footer') %>

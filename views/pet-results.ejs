@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<main class="content-area">
+    <div class="results-section">
+        <h2>Pet Search Results</h2>
+        <p>Here are the pets available for adoption based on your search criteria:</p>
+
+        <div class="pet-grid">
+            <!-- Example Pet Result -->
+            <div class="pet-card">
+                <img src="https://example.com/path-to-pet-image.jpg" alt="Pet Name" class="pet-image">
+                <div class="pet-info">
+                    <h3 class="pet-name">Pet Name</h3>
+                    <p class="pet-detail"><span>Type:</span> Dog</p>
+                    <p class="pet-detail"><span>Breed:</span> Labrador</p>
+                    <p class="pet-detail"><span>Age:</span> 2 years</p>
+                    <p class="pet-detail"><span>Gender:</span> Male</p>
+                    <p class="pet-detail"><span>Gets along with:</span> Other dogs, children</p>
+                    <p class="pet-detail"><span>Vaccinated:</span> Yes</p>
+                    <p class="pet-detail"><span>Description:</span> A friendly and energetic dog looking for a loving home.</p>
+                    <button class="interested-btn">Interested</button>
+                </div>
+            </div>
+            <!-- Repeat similar blocks for other pets -->
+        </div>
+    </div>
+</main>
+<%- include('partials/footer') %>
